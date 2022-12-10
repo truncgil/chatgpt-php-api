@@ -1,7 +1,7 @@
 <?php
 include("vendor/autoload.php");
 // Replace with your own API key
-$apiKey = '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';
+$apiKey = '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';
 
 // Function to generate a response from GPT-3
 function generateResponse($prompt) {
@@ -11,7 +11,7 @@ function generateResponse($prompt) {
     ->body(json_encode(array(
         'model' => 'text-davinci-003', // Use the Davinci model
         'prompt' => $prompt,
-        'max_tokens' => 150,
+        'max_tokens' => 1500,
         'temperature' => 0.9,
         'top_p' => 1,
         'n' => 1,
@@ -24,7 +24,7 @@ function generateResponse($prompt) {
     ->addHeader('Content-Type', 'application/json')
     ->addHeader('Authorization', 'Bearer ' . $apiKey)
     ->send();
-    print_r($response);
+  // print_r($response);
   return $response->body->choices[0]->text;
 }
 
