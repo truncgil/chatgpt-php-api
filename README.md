@@ -1,7 +1,7 @@
 # Chat GPT PHP API 
 A script that you can easily work on PHP using the ChatGPT API.
 
-#Usage
+# Usage
 First, get an API key from:
 https://beta.openai.com/account/api-keys
 Then update this line
