@@ -12,7 +12,7 @@ $apiKey = 'YOUR_API_KEY';
 You can write the prompt text with the text parameter in the url line.
 You can set how much the return value should be with ```max_token```.
 
-#Demo
+# Demo
 Let's learn about Trunçgil Technology.
 http://chatgpt.truncgil.com/?api_key=YOUR_API_KEY&text=Trun%C3%A7gil%20Teknoloji%20hakk%C4%B1nda%20bilgi
 
