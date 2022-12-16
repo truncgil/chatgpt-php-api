@@ -14,26 +14,33 @@ You can set how much the return value should be with ```max_token```.
 
 # Demo
 Let's learn about Trunçgil Technology.
-http://chatgpt.truncgil.com/?api_key=YOUR_API_KEY&text=Trun%C3%A7gil%20Teknoloji%20hakk%C4%B1nda%20bilgi
+http://chatgpt.truncgil.com
 
+```
+api_key:YOUR_API_KEY
+prompt:Trunçgil Teknoloji Hakkında bilgi verebilir misin
+model:text-davinci-003
+max_tokens:100
+stream:0
+```
 ```json
 {
-  "id": "cmpl-6Loi2UDUvwDaNOhTko714twyWtFyM",
-  "object": "text_completion",
-  "created": 1670657834,
-  "model": "text-davinci-003",
-  "choices": [
-    {
-      "text": "\n\nTrunçgil Teknoloji, sayısal çözümler sağlayan bir teknoloji şirketidir. Şirket, sahip olduğu deneyim ve uzmanlıkla ürün ve hizmetler geliştirmektedir. Trunçgil Teknoloji, bulut bilişim, veri yönetimi, mobil çözümler, robotik, görüntü işleme, ölçeklenebilir kurumsal yazılımlar, ticari uygulamalar ve çoklu platformlar arasındaki her türlü alana hizmet sağlamaktadır. Bunların yanı sıra, Trunçgil Teknoloji, web sitesi ve uygulama geliştirme, makine öğrenimi ve tahmin modelleri, kurumsal ağ güvenliği, sanal gerçeklik, Artırılmış Gerçeklik ve nesnelerin interneti çözümleri sunmaktadır.",
-      "index": 0,
-      "logprobs": null,
-      "finish_reason": "stop"
+    "id": "cmpl-6NwY2JG6D6ro7FenbjEAqHg6hYMhH",
+    "object": "text_completion",
+    "created": 1671164622,
+    "model": "text-davinci-003",
+    "choices": [
+        {
+            "text": "iz?\n\nTrunçgil Teknoloji, özellikle kablosuz ağlar ve haberleşme alanında çalışan bir teknoloji şirketidir. Şirket, kablosuz ağların tasarımı, geliştirilmesi ve uygulanması için çözümler sun",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 20,
+        "completion_tokens": 100,
+        "total_tokens": 120
     }
-  ],
-  "usage": {
-    "prompt_tokens": 14,
-    "completion_tokens": 290,
-    "total_tokens": 304
-  }
 }
 ```
