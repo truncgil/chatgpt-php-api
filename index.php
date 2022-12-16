@@ -1,12 +1,17 @@
 <?php
 include("vendor/autoload.php");
-// Replace with your own API key
+if(!isset($_GET['api_key'])) die('Please send secret api with api_key.');
+
+if(!isset($_GET['model'])) die('Please provide the model information you will use, for example text-davinci-003');
+
+if(!isset($_GET['text'])) die('Please send the prompt text.');
+
 $apiKey = $_GET['api_key'];
 $model = $_GET['model'];
 
 // Function to generate a response from GPT-3
 function generateResponse($prompt) {
-    global $apiKey;
+  global $apiKey;
   // Use the completions endpoint to generate a response
   $response = \Httpful\Request::post('https://api.openai.com/v1/completions')
     ->body(json_encode(array(
@@ -25,8 +30,8 @@ function generateResponse($prompt) {
     ->addHeader('Content-Type', 'application/json')
     ->addHeader('Authorization', 'Bearer ' . $apiKey)
     ->send();
-  // print_r($response);
-  return $response->body->choices[0]->text;
+
+    return $response->body->choices[0]->text;
 }
 
 // Function to handle user input and generate a response
