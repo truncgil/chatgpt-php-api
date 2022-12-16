@@ -16,6 +16,9 @@ You can set how much the return value should be with ```max_token```.
 Let's learn about Trunçgil Technology.
 http://chatgpt.truncgil.com
 
+Postman Sandbox
+https://www.postman.com/truncgil/workspace/b8c54fde-a93a-4d82-9f90-7dab10babde4/request/18648149-6f487c13-9cf1-40cc-ad7b-2a0f2d9f7222
+
 ```
 api_key:YOUR_API_KEY | required
 prompt:Can you give information about Trunçgil technology? | required
