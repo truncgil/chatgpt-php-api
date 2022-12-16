@@ -12,7 +12,7 @@ $apiKey = 'YOUR_API_KEY';
 You can write the prompt text with the text parameter in the url line.
 You can set how much the return value should be with ```max_token```.
 
-# Demo
+# Our Restful API application that you can use quickly
 Let's learn about Trunçgil Technology.
 http://chatgpt.truncgil.com
 
