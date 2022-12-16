@@ -1,7 +1,8 @@
 <?php
 include("vendor/autoload.php");
 // Replace with your own API key
-$apiKey = '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';
+$apiKey = $_GET['api_key'];
+$model = $_GET['model'];
 
 // Function to generate a response from GPT-3
 function generateResponse($prompt) {
@@ -9,7 +10,7 @@ function generateResponse($prompt) {
   // Use the completions endpoint to generate a response
   $response = \Httpful\Request::post('https://api.openai.com/v1/completions')
     ->body(json_encode(array(
-        'model' => 'text-davinci-003', // Use the Davinci model
+        'model' => $model, // Use the Davinci model
         'prompt' => $prompt,
         'max_tokens' => 1500,
         'temperature' => 0.9,
