@@ -47,22 +47,22 @@ prompt:Can you give information about Trunçgil technology? | required
 ```
 ```json
 {
-    "id": "cmpl-6NwY2JG6D6ro7FenbjEAqHg6hYMhH",
+    "id": "cmpl-6Nwh4Ucez4CcFsRZ2vEEymDD7wghs",
     "object": "text_completion",
-    "created": 1671164622,
+    "created": 1671165182,
     "model": "text-davinci-003",
     "choices": [
         {
-            "text": "iz?\n\nTrunçgil Teknoloji, özellikle kablosuz ağlar ve haberleşme alanında çalışan bir teknoloji şirketidir. Şirket, kablosuz ağların tasarımı, geliştirilmesi ve uygulanması için çözümler sun",
+            "text": "\n\nTrunçgil technology is a patented, proprietary technology developed by Trunçgil Technologies, Inc. It is a system of advanced algorithms and software that enables the analysis of large amounts of data in real-time. The technology is used to identify patterns and trends in data, allowing for more accurate predictions and decisions. It can be used in a variety of industries, including finance, healthcare, retail, and manufacturing. Trunçgil technology is designed to help organizations make better decisions faster",
             "index": 0,
             "logprobs": null,
             "finish_reason": "length"
         }
     ],
     "usage": {
-        "prompt_tokens": 20,
+        "prompt_tokens": 11,
         "completion_tokens": 100,
-        "total_tokens": 120
+        "total_tokens": 111
     }
 }
 ```
