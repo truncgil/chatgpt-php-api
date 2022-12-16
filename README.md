@@ -17,11 +17,33 @@ Let's learn about Trunçgil Technology.
 http://chatgpt.truncgil.com
 
 ```
-api_key:YOUR_API_KEY
-prompt:Can you give information about Trunçgil technology?
-model:text-davinci-003
-max_tokens:100
-stream:0
+api_key:YOUR_API_KEY | required
+prompt:Can you give information about Trunçgil technology? | required
+```
+
+```
+  ["model"]=>
+  string(16) "text-davinci-003"
+  ["prompt"]=>
+  string(52) "Can you give information about Trunçgil technology?"
+  ["max_tokens"]=>
+  int(100)
+  ["temperature"]=>
+  int(0)
+  ["top_p"]=>
+  int(1)
+  ["n"]=>
+  int(1)
+  ["presence_penalty"]=>
+  float(0.6)
+  ["frequency_penalty"]=>
+  int(0)
+  ["stream"]=>
+  bool(false)
+  ["logprobs"]=>
+  NULL
+  ["stop"]=>
+  string(4) "null"
 ```
 ```json
 {
