@@ -18,7 +18,7 @@ http://chatgpt.truncgil.com
 
 ```
 api_key:YOUR_API_KEY
-prompt:Trunçgil Teknoloji Hakkında bilgi verebilir misin
+prompt:Can you give information about Trunçgil technology?
 model:text-davinci-003
 max_tokens:100
 stream:0
